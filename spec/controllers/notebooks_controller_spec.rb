@@ -3,10 +3,12 @@
 require 'rails_helper'
 
 RSpec.describe NotebooksController, type: :controller do
-  describe '#index' do
-    it 'should show' do
-      get 'index'
-      expect(response.status).to be 200
+  before { create_and_login_user }
+
+  describe 'GET index' do
+    it 'renders' do
+      get :index
+      expect(response).to have_http_status(:ok)
     end
   end
 end

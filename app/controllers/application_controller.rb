@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
 
     return unless user_signed_in? && current_user.admin?
 
-    devise_parameter_sanitizer.for(:account_update, keys: [:admin])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:admin])
   end
 
   def layout_by_resource
