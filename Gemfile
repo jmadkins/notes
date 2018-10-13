@@ -27,6 +27,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'sass-rails'
 gem 'sprockets-rails'
+gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
