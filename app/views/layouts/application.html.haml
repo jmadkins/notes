@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    = render partial: 'layouts/partials/header'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', id: 'maincss'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %a#top
+    = render partial: 'layouts/partials/navbar'
+    .container.padded-container
+      #pageLoading
+        #pageLoadingContent
+          %p#pageLoadingSpinner
+            = fa_spin 'spinner', 'fa-5x'
+            %br
+            %span.text-primary Loading ... Please wait...
+      = render partial: 'layouts/partials/alerts'
+      =# render partial: 'layouts/partials/screen_size'
+      = yield
+    = yield :scripts

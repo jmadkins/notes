@@ -31,5 +31,5 @@
 /config/master.key
 
 # Environment files
-env.*
-!env.development
+.env.*
+!.env.development
