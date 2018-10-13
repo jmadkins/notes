@@ -1,0 +1,13 @@
+AllCops:
+  Exclude:
+    - "db/**/*"
+    - "bin/**/*"
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 30
