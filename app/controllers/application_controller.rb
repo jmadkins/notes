@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    additional_fields = %i[username display_name].freeze
+    additional_fields = %i[first_name last_name].freeze
     devise_parameter_sanitizer.permit(:sign_up, keys: additional_fields)
     devise_parameter_sanitizer.permit(:account_update, keys: additional_fields)
 
