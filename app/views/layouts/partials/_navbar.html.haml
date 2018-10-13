@@ -4,7 +4,8 @@
       %span.navbar-toggler-icon
     .collapse.navbar-collapse#navbarSupportedContent
       = link_to root_path, class: 'navbar-brand text-white text-small' do
-        Notes
+        = fa_light 'book-open'
+        Notebook
         - if Rails.env.development?
           %small
             %strong.text-info DEV
