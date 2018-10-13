@@ -15,10 +15,6 @@
         = f.text_field :last_name, class: 'form-control', autocomplete: 'off', placeholder: 'Last Name'
 
     .form-group
-      = f.label :phone_number
-      = f.text_field :phone_number, class: 'form-control', autocomplete: 'off', type: 'phone'
-
-    .form-group
       = f.label :email
       = f.email_field :email, class: 'form-control', autocomplete: 'off'
 
@@ -28,5 +24,5 @@
       %p.form-text.text-muted
         We need your current password to confirm your changes
 
-    = link_to 'Cancel', home_path, class: 'btn btn-secondary'
+    = link_to 'Cancel', root_path, class: 'btn btn-secondary'
     = f.submit 'Save Changes', class: 'btn btn-success'
