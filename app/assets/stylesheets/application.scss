@@ -1,4 +1,11 @@
+@import "variables";
 @import "bootstrap";
+@import "bootswatch";
+
+.padded-container {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
 
 #pageLoading {
   display: none;
