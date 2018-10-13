@@ -39,6 +39,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
+  gem 'rubocop', require: false
   gem 'ruby-debug-ide'
   gem 'shoulda-matchers', '4.0.0.rc1'
 end
