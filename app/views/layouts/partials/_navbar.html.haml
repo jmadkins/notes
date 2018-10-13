@@ -12,4 +12,7 @@
         - if Rails.env.test?
           %small
             %strong.text-danger QA
-      -# = render partial: 'layouts/partials/user_menu'
+      - if user_signed_in?
+        = render partial: 'layouts/partials/user_menu'
+      - else
+        = render partial: 'layouts/partials/public_menu'
